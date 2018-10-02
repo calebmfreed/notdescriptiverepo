@@ -1,0 +1,1 @@
+If I had more pages to display, they would usually all live in here, and then the App.js would contain the top level React router to route to the various pages contained in this folder. Since there's only one page to display here, I'm leaving this empty and making App.js the one page.

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./vivid-api/
+      args:
+        JAR_FILE: build/libs/*.jar
+    ports:
+      - "8080:8080"
+  ui:
+    build:
+      context: ./vivid-ui/
+    ports: 
+      - "80:80"

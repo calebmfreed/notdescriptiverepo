@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+	    <title>Buy and Sell Tickets: Concerts, Sports, &amp; Theatre | Vivid Seats </title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+             <div>
+                 <a href="http://localhost:3000">Finished product located here if not using docker</a>
+                 <a href="http://localhost">Finished product located here if using docker</a>
+                 <table class="table events-table">
+                    <tr class="events-table-header">
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Venue</th>
+                        <th>City</th>
+                        <th>State</th>
+                    </tr>
+                    <tr>
+                        <td>Chicago White Sox at Chicago Cubs</td>
+                        <td>August 1 7:30 PM</td>
+                        <td>Wrigley Field</td>
+                        <td>Chicago</td>
+                        <td>IL</td>
+                    </tr>
+                </table>
+                <button id="add-btn">Add Event</button>
+                <!--Add Event Modal -->
+                <div id="add-Event-Modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Add New Event</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form name="addEventForm">
+                            <p>Event Information</p>
+                            <input placeholder="Event Name">
+                            <input placeholder="Date" id="add-event-date">
+                            <input placeholder="Time" id="add-event-time">
+                            <p>Venue Information</p>
+                            <input placeholder="Venue Name">
+                            <input placeholder="Venue City">
+                            <select name="state" size="1">
+                                  <option value="AK">AK</option>
+                                  <option value="AL">AL</option>
+                                  <option value="AR">AR</option>
+                                  <option value="AZ">AZ</option>
+                                  <option value="CA">CA</option>
+                                  <option value="CO">CO</option>
+                                  <option value="CT">CT</option>
+                                  <option value="DC">DC</option>
+                                  <option value="DE">DE</option>
+                                  <option value="FL">FL</option>
+                                  <option value="GA">GA</option>
+                                  <option value="HI">HI</option>
+                                  <option value="IA">IA</option>
+                                  <option value="ID">ID</option>
+                                  <option value="IL">IL</option>
+                                  <option value="IN">IN</option>
+                                  <option value="KS">KS</option>
+                                  <option value="KY">KY</option>
+                                  <option value="LA">LA</option>
+                                  <option value="MA">MA</option>
+                                  <option value="MD">MD</option>
+                                  <option value="ME">ME</option>
+                                  <option value="MI">MI</option>
+                                  <option value="MN">MN</option>
+                                  <option value="MO">MO</option>
+                                  <option value="MS">MS</option>
+                                  <option value="MT">MT</option>
+                                  <option value="NC">NC</option>
+                                  <option value="ND">ND</option>
+                                  <option value="NE">NE</option>
+                                  <option value="NH">NH</option>
+                                  <option value="NJ">NJ</option>
+                                  <option value="NM">NM</option>
+                                  <option value="NV">NV</option>
+                                  <option value="NY">NY</option>
+                                  <option value="OH">OH</option>
+                                  <option value="OK">OK</option>
+                                  <option value="OR">OR</option>
+                                  <option value="PA">PA</option>
+                                  <option value="RI">RI</option>
+                                  <option value="SC">SC</option>
+                                  <option value="SD">SD</option>
+                                  <option value="TN">TN</option>
+                                  <option value="TX">TX</option>
+                                  <option value="UT">UT</option>
+                                  <option value="VA">VA</option>
+                                  <option value="VT">VT</option>
+                                  <option value="WA">WA</option>
+                                  <option value="WI">WI</option>
+                                  <option value="WV">WV</option>
+                                  <option value="WY">WY</option>
+                            </select>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal">Close</button>
+                                <button type="submit">Add Event</button>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
